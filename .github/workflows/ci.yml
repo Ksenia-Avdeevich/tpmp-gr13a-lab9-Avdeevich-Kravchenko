@@ -23,8 +23,16 @@ jobs:
           sudo xcode-select -switch /Applications/Xcode_16.app
           xcodebuild -version
 
-      - name: Show available simulators
-        run: xcrun simctl list devices available | grep "iPhone" | head -10
+      - name: DEBUG - show repo structure
+        run: |
+          echo "=== Root files ==="
+          ls -la
+          echo "=== xcodeproj contents ==="
+          ls -la MusicShop.xcodeproj/
+          echo "=== Available schemes ==="
+          xcodebuild -list -project MusicShop.xcodeproj
+          echo "=== Available simulators ==="
+          xcrun simctl list devices available | grep "iPhone 1" | head -10
 
       - name: Install xcpretty
         run: gem install xcpretty --no-document
@@ -70,21 +78,3 @@ jobs:
         with:
           name: ui-test-results
           path: TestResults/UITests.xcresult
-
-      - name: Archive Build (main only)
-        if: github.ref == 'refs/heads/main'
-        run: |
-          set -o pipefail
-          xcodebuild archive \
-            -project MusicShop.xcodeproj \
-            -scheme MusicShop \
-            -destination 'generic/platform=iOS Simulator' \
-            -archivePath build/MusicShop.xcarchive \
-            2>&1 | xcpretty --color
-
-      - name: Upload Archive (main only)
-        uses: actions/upload-artifact@v4
-        if: github.ref == 'refs/heads/main'
-        with:
-          name: MusicShop-archive
-          path: build/MusicShop.xcarchive

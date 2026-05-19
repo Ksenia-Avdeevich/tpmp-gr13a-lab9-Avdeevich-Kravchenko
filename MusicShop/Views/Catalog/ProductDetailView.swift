@@ -149,8 +149,7 @@ struct ProductDetailView: View {
         Button {
             if let userId = authViewModel.currentUser?.id {
                 withAnimation(.spring()) {
-                    isFavorite = catalogViewModel.toggleFavorite(product: product, userId: userId)
-                    // toggleFavorite returns Void, update from DB
+                    catalogViewModel.toggleFavorite(product: product, userId: userId)
                     isFavorite = catalogViewModel.isFavorite(product: product, userId: userId)
                 }
             }

@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15A1A1AA2FBCE11B008BADBF /* MusicShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1A92FBCE11B008BADBF /* MusicShopApp.swift */; };
+		15A1A1AC2FBCE11B008BADBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1AB2FBCE11B008BADBF /* ContentView.swift */; };
+		15A1A1AE2FBCE11D008BADBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A1A1AD2FBCE11D008BADBF /* Assets.xcassets */; };
+		15A1A1B12FBCE11D008BADBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A1A1B02FBCE11D008BADBF /* Preview Assets.xcassets */; };
+		15A1A1C62FBCE337008BADBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15A1A1C42FBCE337008BADBF /* Localizable.strings */; };
+		15A1A1C92FBCE365008BADBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15A1A1C72FBCE365008BADBF /* Localizable.strings */; };
+		15A1A1CC2FBCE378008BADBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15A1A1CA2FBCE378008BADBF /* Localizable.strings */; };
+		15A1A1CF2FBCE3D5008BADBF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1CD2FBCE3D5008BADBF /* Extensions.swift */; };
+		15A1A1E32FBCE9EB008BADBF /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1D52FBCE9EB008BADBF /* MainTabView.swift */; };
+		15A1A1E42FBCE9EB008BADBF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1D72FBCE9EB008BADBF /* LoginView.swift */; };
+		15A1A1E52FBCE9EB008BADBF /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1D82FBCE9EB008BADBF /* RegisterView.swift */; };
+		15A1A1E62FBCE9EB008BADBF /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1DA2FBCE9EB008BADBF /* ProductCardView.swift */; };
+		15A1A1E72FBCE9EB008BADBF /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1DB2FBCE9EB008BADBF /* ProductDetailView.swift */; };
+		15A1A1E82FBCE9EB008BADBF /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1DC2FBCE9EB008BADBF /* CatalogView.swift */; };
+		15A1A1E92FBCE9EB008BADBF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1DE2FBCE9EB008BADBF /* SearchView.swift */; };
+		15A1A1EA2FBCE9EB008BADBF /* StoreMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1E02FBCE9EB008BADBF /* StoreMapView.swift */; };
+		15A1A1EB2FBCE9EB008BADBF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1E22FBCE9EB008BADBF /* ProfileView.swift */; };
+		15A1A1F12FBCEA1B008BADBF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1ED2FBCEA1B008BADBF /* User.swift */; };
+		15A1A1F22FBCEA1B008BADBF /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1EE2FBCEA1B008BADBF /* CartItem.swift */; };
+		15A1A1F32FBCEA1B008BADBF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1EF2FBCEA1B008BADBF /* Store.swift */; };
+		15A1A1F42FBCEA1B008BADBF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1F02FBCEA1B008BADBF /* Product.swift */; };
+		15A1A1FA2FBCEA36008BADBF /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1F62FBCEA36008BADBF /* CatalogViewModel.swift */; };
+		15A1A1FB2FBCEA36008BADBF /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1F72FBCEA36008BADBF /* AuthViewModel.swift */; };
+		15A1A1FC2FBCEA36008BADBF /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1F82FBCEA36008BADBF /* SearchViewModel.swift */; };
+		15A1A1FD2FBCEA36008BADBF /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1F92FBCEA36008BADBF /* MapViewModel.swift */; };
+		15A1A2012FBCEA4B008BADBF /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1FF2FBCEA4B008BADBF /* UserDefaultsService.swift */; };
+		15A1A2022FBCEA4B008BADBF /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A2002FBCEA4B008BADBF /* DatabaseService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15A1A1A62FBCE11B008BADBF /* MusicShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A1A1A92FBCE11B008BADBF /* MusicShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicShopApp.swift; sourceTree = "<group>"; };
+		15A1A1AB2FBCE11B008BADBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		15A1A1AD2FBCE11D008BADBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15A1A1B02FBCE11D008BADBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		15A1A1C52FBCE337008BADBF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Localizable.strings; sourceTree = "<group>"; };
+		15A1A1C82FBCE365008BADBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		15A1A1CB2FBCE378008BADBF /* be */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = be; path = Localizable.strings; sourceTree = "<group>"; };
+		15A1A1CE2FBCE3D5008BADBF /* ru */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ru; path = Extensions.swift; sourceTree = "<group>"; };
+		15A1A1D02FBCE45B008BADBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15A1A1D52FBCE9EB008BADBF /* MainTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		15A1A1D72FBCE9EB008BADBF /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		15A1A1D82FBCE9EB008BADBF /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		15A1A1DA2FBCE9EB008BADBF /* ProductCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
+		15A1A1DB2FBCE9EB008BADBF /* ProductDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		15A1A1DC2FBCE9EB008BADBF /* CatalogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		15A1A1DE2FBCE9EB008BADBF /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		15A1A1E02FBCE9EB008BADBF /* StoreMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreMapView.swift; sourceTree = "<group>"; };
+		15A1A1E22FBCE9EB008BADBF /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		15A1A1ED2FBCEA1B008BADBF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		15A1A1EE2FBCEA1B008BADBF /* CartItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		15A1A1EF2FBCEA1B008BADBF /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		15A1A1F02FBCEA1B008BADBF /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		15A1A1F62FBCEA36008BADBF /* CatalogViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
+		15A1A1F72FBCEA36008BADBF /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		15A1A1F82FBCEA36008BADBF /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		15A1A1F92FBCEA36008BADBF /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		15A1A1FF2FBCEA4B008BADBF /* UserDefaultsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		15A1A2002FBCEA4B008BADBF /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15A1A1A32FBCE11B008BADBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15A1A19D2FBCE11A008BADBF = {
+			isa = PBXGroup;
+			children = (
+				15A1A1A82FBCE11B008BADBF /* MusicShop */,
+				15A1A1A72FBCE11B008BADBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15A1A1A72FBCE11B008BADBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1A62FBCE11B008BADBF /* MusicShop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15A1A1A82FBCE11B008BADBF /* MusicShop */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1FE2FBCEA4B008BADBF /* Services */,
+				15A1A1F52FBCEA36008BADBF /* ViewModels */,
+				15A1A1EC2FBCEA1B008BADBF /* Models */,
+				15A1A1D42FBCE9EB008BADBF /* Views */,
+				15A1A1D02FBCE45B008BADBF /* Info.plist */,
+				15A1A1C02FBCE29D008BADBF /* Resources */,
+				15A1A1B72FBCE126008BADBF /* App */,
+				15A1A1AD2FBCE11D008BADBF /* Assets.xcassets */,
+				15A1A1AF2FBCE11D008BADBF /* Preview Content */,
+			);
+			path = MusicShop;
+			sourceTree = "<group>";
+		};
+		15A1A1AF2FBCE11D008BADBF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1B02FBCE11D008BADBF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		15A1A1B72FBCE126008BADBF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1AB2FBCE11B008BADBF /* ContentView.swift */,
+				15A1A1A92FBCE11B008BADBF /* MusicShopApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		15A1A1C02FBCE29D008BADBF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1CD2FBCE3D5008BADBF /* Extensions.swift */,
+				15A1A1C32FBCE2C5008BADBF /* ru.lproj */,
+				15A1A1C22FBCE2B8008BADBF /* en.lproj */,
+				15A1A1C12FBCE2AB008BADBF /* be.lproj */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		15A1A1C12FBCE2AB008BADBF /* be.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1CA2FBCE378008BADBF /* Localizable.strings */,
+			);
+			path = be.lproj;
+			sourceTree = "<group>";
+		};
+		15A1A1C22FBCE2B8008BADBF /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1C72FBCE365008BADBF /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		15A1A1C32FBCE2C5008BADBF /* ru.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1C42FBCE337008BADBF /* Localizable.strings */,
+			);
+			path = ru.lproj;
+			sourceTree = "<group>";
+		};
+		15A1A1D42FBCE9EB008BADBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1D52FBCE9EB008BADBF /* MainTabView.swift */,
+				15A1A1D62FBCE9EB008BADBF /* Auth */,
+				15A1A1D92FBCE9EB008BADBF /* Catalog */,
+				15A1A1DD2FBCE9EB008BADBF /* Search */,
+				15A1A1DF2FBCE9EB008BADBF /* Map */,
+				15A1A1E12FBCE9EB008BADBF /* Profile */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15A1A1D62FBCE9EB008BADBF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1D72FBCE9EB008BADBF /* LoginView.swift */,
+				15A1A1D82FBCE9EB008BADBF /* RegisterView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		15A1A1D92FBCE9EB008BADBF /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1DA2FBCE9EB008BADBF /* ProductCardView.swift */,
+				15A1A1DB2FBCE9EB008BADBF /* ProductDetailView.swift */,
+				15A1A1DC2FBCE9EB008BADBF /* CatalogView.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		15A1A1DD2FBCE9EB008BADBF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1DE2FBCE9EB008BADBF /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		15A1A1DF2FBCE9EB008BADBF /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1E02FBCE9EB008BADBF /* StoreMapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		15A1A1E12FBCE9EB008BADBF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1E22FBCE9EB008BADBF /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		15A1A1EC2FBCEA1B008BADBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1ED2FBCEA1B008BADBF /* User.swift */,
+				15A1A1EE2FBCEA1B008BADBF /* CartItem.swift */,
+				15A1A1EF2FBCEA1B008BADBF /* Store.swift */,
+				15A1A1F02FBCEA1B008BADBF /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		15A1A1F52FBCEA36008BADBF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1F62FBCEA36008BADBF /* CatalogViewModel.swift */,
+				15A1A1F72FBCEA36008BADBF /* AuthViewModel.swift */,
+				15A1A1F82FBCEA36008BADBF /* SearchViewModel.swift */,
+				15A1A1F92FBCEA36008BADBF /* MapViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		15A1A1FE2FBCEA4B008BADBF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A1FF2FBCEA4B008BADBF /* UserDefaultsService.swift */,
+				15A1A2002FBCEA4B008BADBF /* DatabaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15A1A1A52FBCE11B008BADBF /* MusicShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15A1A1B42FBCE11D008BADBF /* Build configuration list for PBXNativeTarget "MusicShop" */;
+			buildPhases = (
+				15A1A1A22FBCE11B008BADBF /* Sources */,
+				15A1A1A32FBCE11B008BADBF /* Frameworks */,
+				15A1A1A42FBCE11B008BADBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicShop;
+			productName = MusicShop;
+			productReference = 15A1A1A62FBCE11B008BADBF /* MusicShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15A1A19E2FBCE11A008BADBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					15A1A1A52FBCE11B008BADBF = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 15A1A1A12FBCE11A008BADBF /* Build configuration list for PBXProject "MusicShop" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+				be,
+			);
+			mainGroup = 15A1A19D2FBCE11A008BADBF;
+			productRefGroup = 15A1A1A72FBCE11B008BADBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15A1A1A52FBCE11B008BADBF /* MusicShop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15A1A1A42FBCE11B008BADBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A1A1C62FBCE337008BADBF /* Localizable.strings in Resources */,
+				15A1A1CC2FBCE378008BADBF /* Localizable.strings in Resources */,
+				15A1A1C92FBCE365008BADBF /* Localizable.strings in Resources */,
+				15A1A1B12FBCE11D008BADBF /* Preview Assets.xcassets in Resources */,
+				15A1A1AE2FBCE11D008BADBF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15A1A1A22FBCE11B008BADBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A1A1F32FBCEA1B008BADBF /* Store.swift in Sources */,
+				15A1A1F12FBCEA1B008BADBF /* User.swift in Sources */,
+				15A1A1FA2FBCEA36008BADBF /* CatalogViewModel.swift in Sources */,
+				15A1A1EA2FBCE9EB008BADBF /* StoreMapView.swift in Sources */,
+				15A1A1FC2FBCEA36008BADBF /* SearchViewModel.swift in Sources */,
+				15A1A1E92FBCE9EB008BADBF /* SearchView.swift in Sources */,
+				15A1A1AC2FBCE11B008BADBF /* ContentView.swift in Sources */,
+				15A1A1E82FBCE9EB008BADBF /* CatalogView.swift in Sources */,
+				15A1A1EB2FBCE9EB008BADBF /* ProfileView.swift in Sources */,
+				15A1A1FB2FBCEA36008BADBF /* AuthViewModel.swift in Sources */,
+				15A1A2022FBCEA4B008BADBF /* DatabaseService.swift in Sources */,
+				15A1A1F22FBCEA1B008BADBF /* CartItem.swift in Sources */,
+				15A1A1FD2FBCEA36008BADBF /* MapViewModel.swift in Sources */,
+				15A1A1E72FBCE9EB008BADBF /* ProductDetailView.swift in Sources */,
+				15A1A1F42FBCEA1B008BADBF /* Product.swift in Sources */,
+				15A1A1CF2FBCE3D5008BADBF /* Extensions.swift in Sources */,
+				15A1A2012FBCEA4B008BADBF /* UserDefaultsService.swift in Sources */,
+				15A1A1AA2FBCE11B008BADBF /* MusicShopApp.swift in Sources */,
+				15A1A1E52FBCE9EB008BADBF /* RegisterView.swift in Sources */,
+				15A1A1E42FBCE9EB008BADBF /* LoginView.swift in Sources */,
+				15A1A1E32FBCE9EB008BADBF /* MainTabView.swift in Sources */,
+				15A1A1E62FBCE9EB008BADBF /* ProductCardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		15A1A1C42FBCE337008BADBF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15A1A1C52FBCE337008BADBF /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		15A1A1C72FBCE365008BADBF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15A1A1C82FBCE365008BADBF /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		15A1A1CA2FBCE378008BADBF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15A1A1CB2FBCE378008BADBF /* be */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		15A1A1CD2FBCE3D5008BADBF /* Extensions.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15A1A1CE2FBCE3D5008BADBF /* ru */,
+			);
+			name = Extensions.swift;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15A1A1B22FBCE11D008BADBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15A1A1B32FBCE11D008BADBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15A1A1B52FBCE11D008BADBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MusicShop/Preview Content\"";
+				DEVELOPMENT_TEAM = 5VC7JAXWZW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicShop/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = avdeevich.MusicShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15A1A1B62FBCE11D008BADBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MusicShop/Preview Content\"";
+				DEVELOPMENT_TEAM = 5VC7JAXWZW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicShop/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = avdeevich.MusicShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15A1A1A12FBCE11A008BADBF /* Build configuration list for PBXProject "MusicShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15A1A1B22FBCE11D008BADBF /* Debug */,
+				15A1A1B32FBCE11D008BADBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15A1A1B42FBCE11D008BADBF /* Build configuration list for PBXNativeTarget "MusicShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15A1A1B52FBCE11D008BADBF /* Debug */,
+				15A1A1B62FBCE11D008BADBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15A1A19E2FBCE11A008BADBF /* Project object */;
+}

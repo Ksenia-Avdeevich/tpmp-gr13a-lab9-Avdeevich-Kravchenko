@@ -98,13 +98,13 @@ struct ProfileView: View {
                 Text("English").tag("en")
                 Text("Беларуская").tag("be")
             }
-            .onChange(of: selectedLanguage) { _, newValue in
+            .onChange(of: selectedLanguage) { newValue in
                 UserDefaultsService.shared.selectedLanguage = newValue
             }
             
             // Dark mode toggle
             Toggle(NSLocalizedString("dark_mode_label", comment: ""), isOn: $isDarkMode)
-                .onChange(of: isDarkMode) { _, newValue in
+                .onChange(of: isDarkMode) { newValue in
                     UserDefaultsService.shared.isDarkMode = newValue
                 }
                 .accessibilityIdentifier("darkModeToggle")

@@ -2,7 +2,7 @@ import SwiftUI
 
 // MARK: - Main Tab View
 
-struct MainTabView: View {
+public struct MainTabView: View {
     
     // MARK: - State
     
@@ -13,7 +13,7 @@ struct MainTabView: View {
     
     // MARK: - Body
     
-    var body: some View {
+    public var body: some View {
         TabView(selection: $selectedTab) {
             
             CatalogView()

@@ -15,7 +15,7 @@ struct RegisterView: View {
     @State private var showPassword: Bool = false
     @FocusState private var focusedField: Field?
     
-    private enum Field { case username, email, password, confirmPassword }
+    public enum Field { case username, email, password, confirmPassword }
     
     // MARK: - Body
     

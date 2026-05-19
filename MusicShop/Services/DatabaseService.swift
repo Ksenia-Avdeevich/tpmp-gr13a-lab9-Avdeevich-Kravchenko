@@ -1,6 +1,10 @@
 import Foundation
 import SQLite3
 
+
+private let SQLITE_STATIC = unsafeBitCast(0, to: sqlite3_destructor_type.self)
+private let SQLITE_TRANSIENT = unsafeBitCast(-1, to: sqlite3_destructor_type.self)
+
 // MARK: - Database Service
 
 final class DatabaseService {

@@ -14,7 +14,6 @@
 		15A1A1C62FBCE337008BADBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15A1A1C42FBCE337008BADBF /* Localizable.strings */; };
 		15A1A1C92FBCE365008BADBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15A1A1C72FBCE365008BADBF /* Localizable.strings */; };
 		15A1A1CC2FBCE378008BADBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15A1A1CA2FBCE378008BADBF /* Localizable.strings */; };
-		15A1A1CF2FBCE3D5008BADBF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1CD2FBCE3D5008BADBF /* Extensions.swift */; };
 		15A1A1E32FBCE9EB008BADBF /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1D52FBCE9EB008BADBF /* MainTabView.swift */; };
 		15A1A1E42FBCE9EB008BADBF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1D72FBCE9EB008BADBF /* LoginView.swift */; };
 		15A1A1E52FBCE9EB008BADBF /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1D82FBCE9EB008BADBF /* RegisterView.swift */; };
@@ -34,7 +33,33 @@
 		15A1A1FD2FBCEA36008BADBF /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1F92FBCEA36008BADBF /* MapViewModel.swift */; };
 		15A1A2012FBCEA4B008BADBF /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1FF2FBCEA4B008BADBF /* UserDefaultsService.swift */; };
 		15A1A2022FBCEA4B008BADBF /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A2002FBCEA4B008BADBF /* DatabaseService.swift */; };
+		15A1A21F2FBD0590008BADBF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A1CE2FBCE3D5008BADBF /* Extensions.swift */; };
+		15A1A2272FBD05AC008BADBF /* MusicShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A2262FBD05AC008BADBF /* MusicShopTests.swift */; };
+		15A1A2422FBD05F7008BADBF /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A23C2FBD05F7008BADBF /* ModelTests.swift */; };
+		15A1A2432FBD05F7008BADBF /* AuthViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A23D2FBD05F7008BADBF /* AuthViewModelTests.swift */; };
+		15A1A2442FBD05F7008BADBF /* DatabaseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A23E2FBD05F7008BADBF /* DatabaseServiceTests.swift */; };
+		15A1A2452FBD05F7008BADBF /* CatalogViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A23F2FBD05F7008BADBF /* CatalogViewModelTests.swift */; };
+		15A1A2462FBD05F7008BADBF /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A2402FBD05F7008BADBF /* SearchViewModelTests.swift */; };
+		15A1A2472FBD05F7008BADBF /* UserDefaultsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A2412FBD05F7008BADBF /* UserDefaultsServiceTests.swift */; };
+		15A1A24B2FBD0611008BADBF /* MusicShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A2492FBD0611008BADBF /* MusicShopUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15A1A2282FBD05AC008BADBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15A1A19E2FBCE11A008BADBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15A1A1A52FBCE11B008BADBF;
+			remoteInfo = MusicShop;
+		};
+		15A1A2372FBD05D3008BADBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15A1A19E2FBCE11A008BADBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15A1A1A52FBCE11B008BADBF;
+			remoteInfo = MusicShop;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		15A1A1A62FBCE11B008BADBF /* MusicShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +70,7 @@
 		15A1A1C52FBCE337008BADBF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Localizable.strings; sourceTree = "<group>"; };
 		15A1A1C82FBCE365008BADBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		15A1A1CB2FBCE378008BADBF /* be */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = be; path = Localizable.strings; sourceTree = "<group>"; };
-		15A1A1CE2FBCE3D5008BADBF /* ru */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ru; path = Extensions.swift; sourceTree = "<group>"; };
+		15A1A1CE2FBCE3D5008BADBF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		15A1A1D02FBCE45B008BADBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15A1A1D52FBCE9EB008BADBF /* MainTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		15A1A1D72FBCE9EB008BADBF /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -66,10 +91,34 @@
 		15A1A1F92FBCEA36008BADBF /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		15A1A1FF2FBCEA4B008BADBF /* UserDefaultsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		15A1A2002FBCEA4B008BADBF /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		15A1A2242FBD05AC008BADBF /* MusicShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A1A2262FBD05AC008BADBF /* MusicShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicShopTests.swift; sourceTree = "<group>"; };
+		15A1A2312FBD05D3008BADBF /* MusicShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A1A23C2FBD05F7008BADBF /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		15A1A23D2FBD05F7008BADBF /* AuthViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModelTests.swift; sourceTree = "<group>"; };
+		15A1A23E2FBD05F7008BADBF /* DatabaseServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseServiceTests.swift; sourceTree = "<group>"; };
+		15A1A23F2FBD05F7008BADBF /* CatalogViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogViewModelTests.swift; sourceTree = "<group>"; };
+		15A1A2402FBD05F7008BADBF /* SearchViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
+		15A1A2412FBD05F7008BADBF /* UserDefaultsServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsServiceTests.swift; sourceTree = "<group>"; };
+		15A1A2492FBD0611008BADBF /* MusicShopUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicShopUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		15A1A1A32FBCE11B008BADBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15A1A2212FBD05AC008BADBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15A1A22E2FBD05D3008BADBF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -83,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				15A1A1A82FBCE11B008BADBF /* MusicShop */,
+				15A1A2252FBD05AC008BADBF /* MusicShopTests */,
+				15A1A2322FBD05D3008BADBF /* MusicShopUITests */,
 				15A1A1A72FBCE11B008BADBF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				15A1A1A62FBCE11B008BADBF /* MusicShop.app */,
+				15A1A2242FBD05AC008BADBF /* MusicShopTests.xctest */,
+				15A1A2312FBD05D3008BADBF /* MusicShopUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,7 +184,7 @@
 		15A1A1C02FBCE29D008BADBF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				15A1A1CD2FBCE3D5008BADBF /* Extensions.swift */,
+				15A1A1CE2FBCE3D5008BADBF /* Extensions.swift */,
 				15A1A1C32FBCE2C5008BADBF /* ru.lproj */,
 				15A1A1C22FBCE2B8008BADBF /* en.lproj */,
 				15A1A1C12FBCE2AB008BADBF /* be.lproj */,
@@ -250,6 +303,28 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		15A1A2252FBD05AC008BADBF /* MusicShopTests */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A23D2FBD05F7008BADBF /* AuthViewModelTests.swift */,
+				15A1A23F2FBD05F7008BADBF /* CatalogViewModelTests.swift */,
+				15A1A23E2FBD05F7008BADBF /* DatabaseServiceTests.swift */,
+				15A1A23C2FBD05F7008BADBF /* ModelTests.swift */,
+				15A1A2402FBD05F7008BADBF /* SearchViewModelTests.swift */,
+				15A1A2412FBD05F7008BADBF /* UserDefaultsServiceTests.swift */,
+				15A1A2262FBD05AC008BADBF /* MusicShopTests.swift */,
+			);
+			path = MusicShopTests;
+			sourceTree = "<group>";
+		};
+		15A1A2322FBD05D3008BADBF /* MusicShopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15A1A2492FBD0611008BADBF /* MusicShopUITests.swift */,
+			);
+			path = MusicShopUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -270,6 +345,42 @@
 			productReference = 15A1A1A62FBCE11B008BADBF /* MusicShop.app */;
 			productType = "com.apple.product-type.application";
 		};
+		15A1A2232FBD05AC008BADBF /* MusicShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15A1A22C2FBD05AC008BADBF /* Build configuration list for PBXNativeTarget "MusicShopTests" */;
+			buildPhases = (
+				15A1A2202FBD05AC008BADBF /* Sources */,
+				15A1A2212FBD05AC008BADBF /* Frameworks */,
+				15A1A2222FBD05AC008BADBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15A1A2292FBD05AC008BADBF /* PBXTargetDependency */,
+			);
+			name = MusicShopTests;
+			productName = MusicShopTests;
+			productReference = 15A1A2242FBD05AC008BADBF /* MusicShopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15A1A2302FBD05D3008BADBF /* MusicShopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15A1A2392FBD05D4008BADBF /* Build configuration list for PBXNativeTarget "MusicShopUITests" */;
+			buildPhases = (
+				15A1A22D2FBD05D3008BADBF /* Sources */,
+				15A1A22E2FBD05D3008BADBF /* Frameworks */,
+				15A1A22F2FBD05D3008BADBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15A1A2382FBD05D3008BADBF /* PBXTargetDependency */,
+			);
+			name = MusicShopUITests;
+			productName = MusicShopUITests;
+			productReference = 15A1A2312FBD05D3008BADBF /* MusicShopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -285,6 +396,14 @@
 				TargetAttributes = {
 					15A1A1A52FBCE11B008BADBF = {
 						CreatedOnToolsVersion = 14.0;
+					};
+					15A1A2232FBD05AC008BADBF = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 15A1A1A52FBCE11B008BADBF;
+					};
+					15A1A2302FBD05D3008BADBF = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 15A1A1A52FBCE11B008BADBF;
 					};
 				};
 			};
@@ -304,6 +423,8 @@
 			projectRoot = "";
 			targets = (
 				15A1A1A52FBCE11B008BADBF /* MusicShop */,
+				15A1A2232FBD05AC008BADBF /* MusicShopTests */,
+				15A1A2302FBD05D3008BADBF /* MusicShopUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -318,6 +439,20 @@
 				15A1A1C92FBCE365008BADBF /* Localizable.strings in Resources */,
 				15A1A1B12FBCE11D008BADBF /* Preview Assets.xcassets in Resources */,
 				15A1A1AE2FBCE11D008BADBF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15A1A2222FBD05AC008BADBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15A1A22F2FBD05D3008BADBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +478,7 @@
 				15A1A1FD2FBCEA36008BADBF /* MapViewModel.swift in Sources */,
 				15A1A1E72FBCE9EB008BADBF /* ProductDetailView.swift in Sources */,
 				15A1A1F42FBCEA1B008BADBF /* Product.swift in Sources */,
-				15A1A1CF2FBCE3D5008BADBF /* Extensions.swift in Sources */,
+				15A1A21F2FBD0590008BADBF /* Extensions.swift in Sources */,
 				15A1A2012FBCEA4B008BADBF /* UserDefaultsService.swift in Sources */,
 				15A1A1AA2FBCE11B008BADBF /* MusicShopApp.swift in Sources */,
 				15A1A1E52FBCE9EB008BADBF /* RegisterView.swift in Sources */,
@@ -353,7 +488,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15A1A2202FBD05AC008BADBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A1A2272FBD05AC008BADBF /* MusicShopTests.swift in Sources */,
+				15A1A2422FBD05F7008BADBF /* ModelTests.swift in Sources */,
+				15A1A2462FBD05F7008BADBF /* SearchViewModelTests.swift in Sources */,
+				15A1A2442FBD05F7008BADBF /* DatabaseServiceTests.swift in Sources */,
+				15A1A2472FBD05F7008BADBF /* UserDefaultsServiceTests.swift in Sources */,
+				15A1A2452FBD05F7008BADBF /* CatalogViewModelTests.swift in Sources */,
+				15A1A2432FBD05F7008BADBF /* AuthViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15A1A22D2FBD05D3008BADBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A1A24B2FBD0611008BADBF /* MusicShopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15A1A2292FBD05AC008BADBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15A1A1A52FBCE11B008BADBF /* MusicShop */;
+			targetProxy = 15A1A2282FBD05AC008BADBF /* PBXContainerItemProxy */;
+		};
+		15A1A2382FBD05D3008BADBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15A1A1A52FBCE11B008BADBF /* MusicShop */;
+			targetProxy = 15A1A2372FBD05D3008BADBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		15A1A1C42FBCE337008BADBF /* Localizable.strings */ = {
@@ -378,14 +548,6 @@
 				15A1A1CB2FBCE378008BADBF /* be */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		15A1A1CD2FBCE3D5008BADBF /* Extensions.swift */ = {
-			isa = PBXVariantGroup;
-			children = (
-				15A1A1CE2FBCE3D5008BADBF /* ru */,
-			);
-			name = Extensions.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -565,6 +727,76 @@
 			};
 			name = Release;
 		};
+		15A1A22A2FBD05AC008BADBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5VC7JAXWZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = avdeevich.MusicShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicShop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MusicShop";
+			};
+			name = Debug;
+		};
+		15A1A22B2FBD05AC008BADBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5VC7JAXWZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = avdeevich.MusicShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicShop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MusicShop";
+			};
+			name = Release;
+		};
+		15A1A23A2FBD05D4008BADBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5VC7JAXWZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = avdeevich.MusicShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MusicShop;
+			};
+			name = Debug;
+		};
+		15A1A23B2FBD05D4008BADBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5VC7JAXWZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = avdeevich.MusicShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MusicShop;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,6 +814,24 @@
 			buildConfigurations = (
 				15A1A1B52FBCE11D008BADBF /* Debug */,
 				15A1A1B62FBCE11D008BADBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15A1A22C2FBD05AC008BADBF /* Build configuration list for PBXNativeTarget "MusicShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15A1A22A2FBD05AC008BADBF /* Debug */,
+				15A1A22B2FBD05AC008BADBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15A1A2392FBD05D4008BADBF /* Build configuration list for PBXNativeTarget "MusicShopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15A1A23A2FBD05D4008BADBF /* Debug */,
+				15A1A23B2FBD05D4008BADBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ main, develop ]
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build-and-test:
     name: Build and Test
@@ -33,10 +36,11 @@ jobs:
         run: |
           set -o pipefail
           xcodebuild test \
-            -project MusicShop/MusicShop.xcodeproj \
+            -project MusicShop.xcodeproj \
             -scheme MusicShop \
             -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
             -only-testing:MusicShopTests \
+            -enableCodeCoverage YES \
             -resultBundlePath TestResults/UnitTests.xcresult \
             2>&1 | xcpretty --color
         continue-on-error: true
@@ -45,7 +49,7 @@ jobs:
         run: |
           set -o pipefail
           xcodebuild test \
-            -project MusicShop/MusicShop.xcodeproj \
+            -project MusicShop.xcodeproj \
             -scheme MusicShop \
             -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
             -only-testing:MusicShopUITests \
@@ -72,7 +76,7 @@ jobs:
         run: |
           set -o pipefail
           xcodebuild archive \
-            -project MusicShop/MusicShop.xcodeproj \
+            -project MusicShop.xcodeproj \
             -scheme MusicShop \
             -destination 'generic/platform=iOS Simulator' \
             -archivePath build/MusicShop.xcarchive \

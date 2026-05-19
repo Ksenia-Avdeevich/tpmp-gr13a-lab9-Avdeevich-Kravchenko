@@ -1,0 +1,95 @@
+/* App */
+"app_name" = "MusicShop";
+"app_tagline" = "Ваша музычная крама";
+
+/* Auth */
+"login_title" = "Уваход у акаўнт";
+"register_title" = "Рэгістрацыя";
+"username_label" = "Імя карыстальніка";
+"username_placeholder" = "Увядзіце імя карыстальніка";
+"email_label" = "Email";
+"password_label" = "Пароль";
+"password_placeholder" = "Увядзіце пароль";
+"confirm_password_label" = "Пацвярджэнне пароля";
+"confirm_password_placeholder" = "Паўтарыце пароль";
+"login_button" = "Увайсці";
+"register_button" = "Зарэгістравацца";
+"no_account_text" = "Няма акаўнта?";
+"register_link" = "Зарэгістравацца";
+"have_account_link" = "Ужо ёсць акаўнт? Увайсці";
+
+/* Errors */
+"error_empty_fields" = "Запоўніце ўсе палі";
+"error_invalid_credentials" = "Няправільнае імя або пароль";
+"error_invalid_email" = "Няправільны фармат email";
+"error_passwords_mismatch" = "Паролі не супадаюць";
+"error_password_too_short" = "Пароль павінен быць не менш за 6 сімвалаў";
+"error_username_too_short" = "Імя карыстальніка павінна быць не менш за 3 сімвалы";
+"error_registration_failed" = "Памылка рэгістрацыі. Імя або email ужо выкарыстоўваецца";
+
+/* Catalog */
+"catalog_title" = "Каталог";
+"loading_text" = "Загрузка...";
+"no_products_text" = "Няма тавараў у гэтай катэгорыі";
+"out_of_stock" = "Няма ў наяўнасці";
+"genre_all" = "Усе";
+"genre_rock" = "Рок";
+"genre_pop" = "Поп";
+"genre_jazz" = "Джаз";
+"genre_classical" = "Класіка";
+"genre_electronic" = "Электроніка";
+"genre_hiphop" = "Хіп-хоп";
+"genre_country" = "Кантры";
+"genre_blues" = "Блюз";
+
+/* Product Detail */
+"price_label" = "Цана";
+"in_stock_label" = "У наяўнасці";
+"pieces_suffix" = "шт.";
+"description_label" = "Апісанне";
+"genre_label" = "Жанр";
+"year_label" = "Год";
+"add_favorite" = "Дадаць у абраныя";
+"remove_favorite" = "Выдаліць з абраных";
+"close_button" = "Зачыніць";
+
+/* Search */
+"search_title" = "Пошук";
+"search_placeholder" = "Альбом, выканаўца або жанр...";
+"cancel_button" = "Скасаваць";
+"recent_searches_title" = "Апошнія пошукі";
+"clear_button" = "Ачысціць";
+"searching_text" = "Пошук...";
+"no_results_format" = "Нічога не знойдзена па запыту «%@»";
+"results_count_format" = "Знойдзена: %d";
+"search_hint" = "Увядзіце назву альбома,\nімя выканаўцы або жанр";
+
+/* Map */
+"map_title" = "Крамы";
+"nearest_store_button" = "Бліжэйшая крама";
+"navigate_button" = "Маршрут";
+"store_list_title" = "Усе крамы";
+
+/* Profile */
+"profile_title" = "Профіль";
+"profile_section_user" = "Карыстальнік";
+"profile_section_preferences" = "Налады";
+"profile_section_app" = "Пра прыкладанне";
+"language_label" = "Мова";
+"dark_mode_label" = "Цёмная тэма";
+"about_app_label" = "Пра прыкладанне";
+"version_label" = "Версія";
+"logout_button" = "Выйсці";
+"logout_confirm_title" = "Вы ўпэўнены, што хочаце выйсці?";
+"role_manager" = "Менеджар";
+"role_buyer" = "Пакупнік";
+
+/* About */
+"about_description" = "MusicShop — мабільнае прыкладанне музычнага салона для прагляду каталога кампакт-дыскаў, пошуку, навігацыі па крамах і кіравання абранымі.";
+"about_team_title" = "Каманда";
+
+/* Tabs */
+"tab_catalog" = "Каталог";
+"tab_search" = "Пошук";
+"tab_map" = "Карта";
+"tab_profile" = "Профіль";

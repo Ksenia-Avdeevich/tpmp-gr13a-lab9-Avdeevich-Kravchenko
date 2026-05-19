@@ -1,0 +1,95 @@
+/* App */
+"app_name" = "MusicShop";
+"app_tagline" = "Ваш музыкальный магазин";
+
+/* Auth */
+"login_title" = "Вход в аккаунт";
+"register_title" = "Регистрация";
+"username_label" = "Имя пользователя";
+"username_placeholder" = "Введите имя пользователя";
+"email_label" = "Email";
+"password_label" = "Пароль";
+"password_placeholder" = "Введите пароль";
+"confirm_password_label" = "Подтверждение пароля";
+"confirm_password_placeholder" = "Повторите пароль";
+"login_button" = "Войти";
+"register_button" = "Зарегистрироваться";
+"no_account_text" = "Нет аккаунта?";
+"register_link" = "Зарегистрироваться";
+"have_account_link" = "Уже есть аккаунт? Войти";
+
+/* Errors */
+"error_empty_fields" = "Заполните все поля";
+"error_invalid_credentials" = "Неверное имя пользователя или пароль";
+"error_invalid_email" = "Неверный формат email";
+"error_passwords_mismatch" = "Пароли не совпадают";
+"error_password_too_short" = "Пароль должен быть не менее 6 символов";
+"error_username_too_short" = "Имя пользователя должно быть не менее 3 символов";
+"error_registration_failed" = "Ошибка регистрации. Имя или email уже используются";
+
+/* Catalog */
+"catalog_title" = "Каталог";
+"loading_text" = "Загрузка...";
+"no_products_text" = "Нет товаров в этой категории";
+"out_of_stock" = "Нет в наличии";
+"genre_all" = "Все";
+"genre_rock" = "Рок";
+"genre_pop" = "Поп";
+"genre_jazz" = "Джаз";
+"genre_classical" = "Классика";
+"genre_electronic" = "Электроника";
+"genre_hiphop" = "Хип-хоп";
+"genre_country" = "Кантри";
+"genre_blues" = "Блюз";
+
+/* Product Detail */
+"price_label" = "Цена";
+"in_stock_label" = "В наличии";
+"pieces_suffix" = "шт.";
+"description_label" = "Описание";
+"genre_label" = "Жанр";
+"year_label" = "Год";
+"add_favorite" = "Добавить в избранное";
+"remove_favorite" = "Убрать из избранного";
+"close_button" = "Закрыть";
+
+/* Search */
+"search_title" = "Поиск";
+"search_placeholder" = "Альбом, исполнитель или жанр...";
+"cancel_button" = "Отмена";
+"recent_searches_title" = "Недавние поиски";
+"clear_button" = "Очистить";
+"searching_text" = "Поиск...";
+"no_results_format" = "Ничего не найдено по запросу «%@»";
+"results_count_format" = "Найдено: %d";
+"search_hint" = "Введите название альбома,\nимя исполнителя или жанр";
+
+/* Map */
+"map_title" = "Магазины";
+"nearest_store_button" = "Ближайший магазин";
+"navigate_button" = "Маршрут";
+"store_list_title" = "Все магазины";
+
+/* Profile */
+"profile_title" = "Профиль";
+"profile_section_user" = "Пользователь";
+"profile_section_preferences" = "Настройки";
+"profile_section_app" = "О приложении";
+"language_label" = "Язык";
+"dark_mode_label" = "Тёмная тема";
+"about_app_label" = "О приложении";
+"version_label" = "Версия";
+"logout_button" = "Выйти";
+"logout_confirm_title" = "Вы уверены, что хотите выйти?";
+"role_manager" = "Менеджер";
+"role_buyer" = "Покупатель";
+
+/* About */
+"about_description" = "MusicShop — мобильное приложение музыкального салона для просмотра каталога компакт-дисков, поиска, навигации по магазинам и управления избранным.";
+"about_team_title" = "Команда";
+
+/* Tabs */
+"tab_catalog" = "Каталог";
+"tab_search" = "Поиск";
+"tab_map" = "Карта";
+"tab_profile" = "Профиль";

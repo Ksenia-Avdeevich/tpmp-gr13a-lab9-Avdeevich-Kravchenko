@@ -1,0 +1,95 @@
+/* App */
+"app_name" = "MusicShop";
+"app_tagline" = "Your Music Store";
+
+/* Auth */
+"login_title" = "Sign In";
+"register_title" = "Create Account";
+"username_label" = "Username";
+"username_placeholder" = "Enter your username";
+"email_label" = "Email";
+"password_label" = "Password";
+"password_placeholder" = "Enter your password";
+"confirm_password_label" = "Confirm Password";
+"confirm_password_placeholder" = "Repeat your password";
+"login_button" = "Sign In";
+"register_button" = "Create Account";
+"no_account_text" = "Don't have an account?";
+"register_link" = "Sign Up";
+"have_account_link" = "Already have an account? Sign In";
+
+/* Errors */
+"error_empty_fields" = "Please fill in all fields";
+"error_invalid_credentials" = "Invalid username or password";
+"error_invalid_email" = "Invalid email format";
+"error_passwords_mismatch" = "Passwords do not match";
+"error_password_too_short" = "Password must be at least 6 characters";
+"error_username_too_short" = "Username must be at least 3 characters";
+"error_registration_failed" = "Registration failed. Username or email already taken";
+
+/* Catalog */
+"catalog_title" = "Catalog";
+"loading_text" = "Loading...";
+"no_products_text" = "No products in this category";
+"out_of_stock" = "Out of Stock";
+"genre_all" = "All";
+"genre_rock" = "Rock";
+"genre_pop" = "Pop";
+"genre_jazz" = "Jazz";
+"genre_classical" = "Classical";
+"genre_electronic" = "Electronic";
+"genre_hiphop" = "Hip-Hop";
+"genre_country" = "Country";
+"genre_blues" = "Blues";
+
+/* Product Detail */
+"price_label" = "Price";
+"in_stock_label" = "In Stock";
+"pieces_suffix" = "pcs";
+"description_label" = "Description";
+"genre_label" = "Genre";
+"year_label" = "Year";
+"add_favorite" = "Add to Favorites";
+"remove_favorite" = "Remove from Favorites";
+"close_button" = "Close";
+
+/* Search */
+"search_title" = "Search";
+"search_placeholder" = "Album, artist or genre...";
+"cancel_button" = "Cancel";
+"recent_searches_title" = "Recent Searches";
+"clear_button" = "Clear";
+"searching_text" = "Searching...";
+"no_results_format" = "No results for «%@»";
+"results_count_format" = "Found: %d";
+"search_hint" = "Enter an album title,\nartist name or genre";
+
+/* Map */
+"map_title" = "Stores";
+"nearest_store_button" = "Nearest Store";
+"navigate_button" = "Directions";
+"store_list_title" = "All Stores";
+
+/* Profile */
+"profile_title" = "Profile";
+"profile_section_user" = "User";
+"profile_section_preferences" = "Preferences";
+"profile_section_app" = "About";
+"language_label" = "Language";
+"dark_mode_label" = "Dark Mode";
+"about_app_label" = "About App";
+"version_label" = "Version";
+"logout_button" = "Sign Out";
+"logout_confirm_title" = "Are you sure you want to sign out?";
+"role_manager" = "Manager";
+"role_buyer" = "Buyer";
+
+/* About */
+"about_description" = "MusicShop is a mobile music store app for browsing CD catalogs, searching, navigating stores, and managing favorites.";
+"about_team_title" = "Team";
+
+/* Tabs */
+"tab_catalog" = "Catalog";
+"tab_search" = "Search";
+"tab_map" = "Map";
+"tab_profile" = "Profile";

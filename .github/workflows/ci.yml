@@ -12,34 +12,22 @@ env:
 jobs:
   build-and-test:
     name: Build and Test
-    runs-on: macos-13
-    # macos-14 и macos-15 не имеют Xcode 14.0, используем macos-13
+    runs-on: macos-15
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Xcode 14.0
-        uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: '14.0'
-
-      - name: Verify Xcode version
+      - name: Select Xcode 16
         run: |
+          sudo xcode-select -switch /Applications/Xcode_16.app
           xcodebuild -version
-          xcrun simctl list runtimes | grep iOS
 
-      - name: Create iOS 16.0 simulator
+      - name: Override Deployment Target to iOS 18.5
         run: |
-          SIM_NAME="iPhone 14 iOS16"
-          xcrun simctl create "$SIM_NAME" "iPhone 14" "com.apple.CoreSimulator.SimRuntime.iOS-16-0"
-          UDID=$(xcrun simctl list devices | grep "$SIM_NAME" | grep -oE '[A-F0-9-]{36}')
-          echo "SIMULATOR_UDID=$UDID" >> $GITHUB_ENV
-          echo "Simulator UDID: $UDID"
-
-      - name: Boot simulator
-        run: |
-          xcrun simctl boot "$SIMULATOR_UDID" 2>/dev/null || true
+          sed -i '' 's/IPHONEOS_DEPLOYMENT_TARGET = [0-9.]*/IPHONEOS_DEPLOYMENT_TARGET = 18.5/g' MusicShop.xcodeproj/project.pbxproj
+          echo "Deployment targets after patch:"
+          grep "IPHONEOS_DEPLOYMENT_TARGET" MusicShop.xcodeproj/project.pbxproj
 
       - name: Install xcpretty
         run: gem install xcpretty --no-document
@@ -53,7 +41,7 @@ jobs:
           xcodebuild test \
             -project MusicShop.xcodeproj \
             -scheme MusicShop \
-            -destination "id=$SIMULATOR_UDID" \
+            -destination "platform=iOS Simulator,OS=18.5,name=iPhone 16" \
             -only-testing:MusicShopTests \
             -enableCodeCoverage YES \
             -resultBundlePath TestResults/UnitTests.xcresult \
@@ -66,7 +54,7 @@ jobs:
           xcodebuild test \
             -project MusicShop.xcodeproj \
             -scheme MusicShop \
-            -destination "id=$SIMULATOR_UDID" \
+            -destination "platform=iOS Simulator,OS=18.5,name=iPhone 16" \
             -only-testing:MusicShopUITests \
             -resultBundlePath TestResults/UITests.xcresult \
             2>&1 | xcpretty --color

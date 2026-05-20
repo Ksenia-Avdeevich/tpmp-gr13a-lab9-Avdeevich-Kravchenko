@@ -1,16 +1,10 @@
 import SwiftUI
 
-// MARK: - App Entry Point
-
 @main
 struct MusicShopApp: App {
-    
-    // MARK: - Properties
-    
+
     @StateObject private var authViewModel = AuthViewModel()
-    
-    // MARK: - Body
-    
+
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -18,6 +12,14 @@ struct MusicShopApp: App {
                 .onAppear {
                     DatabaseService.shared.setup()
                 }
+        }
+    }
+
+    init() {
+        // Сбрасываем сессию при запуске UI-тестов
+        // чтобы всегда начинать с экрана логина
+        if ProcessInfo.processInfo.environment["RESET_USER_DEFAULTS"] == "1" {
+            UserDefaultsService.shared.clearSession()
         }
     }
 }

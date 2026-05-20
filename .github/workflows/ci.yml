@@ -18,27 +18,36 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Select Xcode 16
+      - name: Select Xcode (max iOS 16)
         run: |
-          sudo xcode-select -switch /Applications/Xcode_16.app
+          # Ваша версия Xcode, которая поддерживает iOS 16
+          sudo xcode-select -switch /Applications/Xcode_14.3.1.app
+          # или Xcode_15.0 - какая у вас установлена
           xcodebuild -version
 
-      - name: Create iOS 17.0 simulator
+      - name: List available runtimes
         run: |
-          # Создаём симулятор с iOS 17.0
-          SIM_NAME="iPhone 16 iOS17"
-          xcrun simctl create "$SIM_NAME" "iPhone 16" "com.apple.CoreSimulator.SimRuntime.iOS-17-0" || true
-          UDID=$(xcrun simctl list devices | grep "$SIM_NAME" | grep -oE '[A-F0-9-]{36}')
-          echo "SIMULATOR_UDID=$UDID" >> $GITHUB_ENV
-          echo "Created simulator with UDID: $UDID"
+          echo "=== Available iOS Runtimes ==="
+          xcrun simctl list runtimes | grep iOS
 
-      - name: Show chosen simulator
-        run: echo "Using simulator $SIMULATOR_UDID"
+      - name: Find or create iOS 16.0 simulator
+        run: |
+          # Ищем существующий симулятор с iOS 16.0
+          UDID=$(xcrun simctl list devices available | grep "iOS 16.0" | grep "iPhone" | head -1 | grep -oE '[A-F0-9-]{36}')
+          
+          if [ -z "$UDID" ]; then
+            echo "Creating iPhone 16 with iOS 16.0..."
+            SIM_NAME="iPhone 16 iOS16"
+            xcrun simctl create "$SIM_NAME" "iPhone 14" "com.apple.CoreSimulator.SimRuntime.iOS-16-0"
+            UDID=$(xcrun simctl list devices | grep "$SIM_NAME" | grep -oE '[A-F0-9-]{36}')
+          fi
+          
+          echo "SIMULATOR_UDID=$UDID" >> $GITHUB_ENV
+          echo "Using simulator UDID: $UDID"
 
       - name: Boot simulator
         run: |
-          xcrun simctl boot "$SIMULATOR_UDID" || true
-          xcrun simctl list devices | grep "$SIMULATOR_UDID"
+          xcrun simctl boot "$SIMULATOR_UDID" 2>/dev/null || true
 
       - name: Install xcpretty
         run: gem install xcpretty --no-document

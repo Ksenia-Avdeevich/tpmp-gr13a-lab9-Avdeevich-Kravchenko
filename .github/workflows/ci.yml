@@ -23,19 +23,22 @@ jobs:
           sudo xcode-select -switch /Applications/Xcode_16.app
           xcodebuild -version
 
-      - name: Find iPhone 16 simulator with iOS 18.5
+      - name: Create iOS 17.0 simulator
         run: |
-          UDID=$(xcrun simctl list devices available | grep "iPhone 16 " | grep "18.5" | grep -v "Plus\|Pro\|Max" | head -1 | grep -oE '[A-F0-9-]{36}')
-          if [ -z "$UDID" ]; then
-            echo "iPhone 16 not found, trying any iPhone with iOS 18.5..."
-            UDID=$(xcrun simctl list devices available | grep "iOS 18.5" -A 50 | grep "iPhone" | head -1 | grep -oE '[A-F0-9-]{36}')
-          fi
-          echo "UDID: $UDID"
-          xcrun simctl boot "$UDID" 2>/dev/null || true
+          # Создаём симулятор с iOS 17.0
+          SIM_NAME="iPhone 16 iOS17"
+          xcrun simctl create "$SIM_NAME" "iPhone 16" "com.apple.CoreSimulator.SimRuntime.iOS-17-0" || true
+          UDID=$(xcrun simctl list devices | grep "$SIM_NAME" | grep -oE '[A-F0-9-]{36}')
           echo "SIMULATOR_UDID=$UDID" >> $GITHUB_ENV
+          echo "Created simulator with UDID: $UDID"
 
       - name: Show chosen simulator
         run: echo "Using simulator $SIMULATOR_UDID"
+
+      - name: Boot simulator
+        run: |
+          xcrun simctl boot "$SIMULATOR_UDID" || true
+          xcrun simctl list devices | grep "$SIMULATOR_UDID"
 
       - name: Install xcpretty
         run: gem install xcpretty --no-document
@@ -49,7 +52,7 @@ jobs:
           xcodebuild test \
             -project MusicShop.xcodeproj \
             -scheme MusicShop \
-            -destination "platform=iOS Simulator,OS=18.5,name=iPhone 16" \
+            -destination "id=$SIMULATOR_UDID" \
             -only-testing:MusicShopTests \
             -enableCodeCoverage YES \
             -resultBundlePath TestResults/UnitTests.xcresult \
@@ -62,7 +65,7 @@ jobs:
           xcodebuild test \
             -project MusicShop.xcodeproj \
             -scheme MusicShop \
-            -destination "platform=iOS Simulator,OS=18.5,name=iPhone 16" \
+            -destination "id=$SIMULATOR_UDID" \
             -only-testing:MusicShopUITests \
             -resultBundlePath TestResults/UITests.xcresult \
             2>&1 | xcpretty --color

@@ -12,52 +12,34 @@ env:
 jobs:
   build-and-test:
     name: Build and Test
-    runs-on: macos-15
+    runs-on: macos-13
+    # macos-14 и macos-15 не имеют Xcode 14.0, используем macos-13
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: List available Xcode versions
-        run: |
-          echo "=== Available Xcode versions ==="
-          ls /Applications/ | grep -i xcode || echo "No Xcode in /Applications"
-          echo "=== Using default Xcode ==="
-          xcodebuild -version
+      - name: Setup Xcode 14.0
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '14.0'
 
-      - name: Use default Xcode (no switch)
+      - name: Verify Xcode version
         run: |
-          # Просто показываем текущую версию, не переключаем
           xcodebuild -version
-          echo "XCODE_VERSION=$(xcodebuild -version | head -1)" >> $GITHUB_ENV
-
-      - name: List available iOS runtimes
-        run: |
-          echo "=== Available iOS Runtimes ==="
           xcrun simctl list runtimes | grep iOS
 
-      - name: Find compatible simulator
+      - name: Create iOS 16.0 simulator
         run: |
-          # Автоматически ищем любой iOS 16 или 17 симулятор
-          UDID=$(xcrun simctl list devices available | grep -E "iOS (1[6-9]|2[0-9])" | grep "iPhone" | head -1 | grep -oE '[A-F0-9-]{36}')
-          
-          if [ -z "$UDID" ]; then
-            echo "No compatible simulator found, creating one..."
-            # Пробуем создать iOS 16.4 (часто доступна)
-            xcrun simctl create "Test iPhone" "iPhone 14" "com.apple.CoreSimulator.SimRuntime.iOS-16-4" || \
-            xcrun simctl create "Test iPhone" "iPhone 14" "com.apple.CoreSimulator.SimRuntime.iOS-16-1" || \
-            xcrun simctl create "Test iPhone" "iPhone 14" "iOS 16" || true
-            
-            UDID=$(xcrun simctl list devices | grep "Test iPhone" | grep -oE '[A-F0-9-]{36}')
-          fi
-          
+          SIM_NAME="iPhone 14 iOS16"
+          xcrun simctl create "$SIM_NAME" "iPhone 14" "com.apple.CoreSimulator.SimRuntime.iOS-16-0"
+          UDID=$(xcrun simctl list devices | grep "$SIM_NAME" | grep -oE '[A-F0-9-]{36}')
           echo "SIMULATOR_UDID=$UDID" >> $GITHUB_ENV
-          echo "Using simulator UDID: $UDID"
+          echo "Simulator UDID: $UDID"
 
       - name: Boot simulator
         run: |
           xcrun simctl boot "$SIMULATOR_UDID" 2>/dev/null || true
-          xcrun simctl list devices | grep "$SIMULATOR_UDID"
 
       - name: Install xcpretty
         run: gem install xcpretty --no-document
